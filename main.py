@@ -10,7 +10,8 @@ st.title("Customer Churn Predictor")
 st.write("This app predicts whether a customer will churn or stay, based on their details.")
 
 # Load the trained model
-model_path = path.join("model", "C:\\Users\\user\\Desktop\\customer_churn\\model\\customer_churn_classifier (1).pkl") # Ensure you save the model here
+model_path = path.join("model", "customer_churn_pipeline.pkl")
+# Ensure you save the model here
 churn_predictor = joblib.load(model_path)
 
 
