@@ -10,8 +10,7 @@ st.title("Customer Churn Predictor")
 st.write("This app predicts whether a customer will churn or stay, based on their details.")
 
 # Load the trained model
-model_path = path.join("model", "model.pkl")
-# Ensure you save the model here
+model_path = path.join("model", "model.pkl") # Ensure you save the model here
 churn_predictor = joblib.load(model_path)
 
 
@@ -79,4 +78,3 @@ if st.button("🔮 Predict Churn"):
         st.error("The customer is likely to Churn")
     else:
         st.success("The customer is likely to Stay")
-
